@@ -12,7 +12,7 @@ public class Producer extends Thread {
 	public void run() {
 		for (int i = 0; i < 5; i++) {
 			Random random = new Random();
-			this.buffer.insert(random.nextInt(100));
+			this.buffer.insert(random.nextInt(1000));
 		}
 	}
 }
